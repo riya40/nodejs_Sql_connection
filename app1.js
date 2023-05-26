@@ -20,7 +20,7 @@ connnection.connect((err)=>{
 
 // data to be inserted
 
-const data = {id:106,name:'riya',department:'security'}
+const data = {id:105,name:'molly',department:'fsd'}
 
 connnection.query('insert into employee set ?',data,(err,result)=>{
     if(err){
