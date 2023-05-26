@@ -20,7 +20,7 @@ connnection.connect((err)=>{
 
 // data to be inserted
 
-const data = {id:105,name:'molly',department:'it'}
+const data = {id:106,name:'riya',department:'security'}
 
 connnection.query('insert into employee set ?',data,(err,result)=>{
     if(err){
@@ -30,8 +30,6 @@ connnection.query('insert into employee set ?',data,(err,result)=>{
     }
     console.log('data inserted successfully');
     console.log('inserted ID:',result.insertId);
-
-    connnection.end();
 });
 
 connnection.query('select * from employee', (err,result)=> {
